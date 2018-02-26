@@ -25,13 +25,10 @@ public class EightBallTest {
     }
 
     @Test
-    public void canGetRandom_answer() {
-        // create a copy of the answers
+    public void canGetRandomAnswer() {
         ArrayList results = eightBall.getAnswers();
-        // get a random answer
         String randomAnswer = eightBall.getRandomAnswer();
         assertTrue(results.contains(randomAnswer));
-        //System.out.println(randomAnswer);
     }
 
     @Test
