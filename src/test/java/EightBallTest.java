@@ -4,6 +4,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 public class EightBallTest {
 
@@ -21,5 +22,15 @@ public class EightBallTest {
     @Test
     public void hasAnswers() {
     assertEquals(3, eightBall.getAnswerCount());
+    }
+
+    @Test
+    public void canGetRandom_answer() {
+        // create a copy of the answers
+        ArrayList results = eightBall.getAnswers();
+        // get a random answer
+        String randomAnswer = eightBall.getRandomAnswer();
+        assertTrue(results.contains(randomAnswer));
+        //System.out.println(randomAnswer);
     }
 }
