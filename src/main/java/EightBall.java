@@ -13,10 +13,6 @@ public class EightBall {
         return new ArrayList<>(answers);
     }
 
-    public void setAnswers(ArrayList<String> answers) {
-        this.answers = answers;
-    }
-
     public int getAnswerCount() {
         return answers.size();
     }
@@ -30,6 +26,8 @@ public class EightBall {
         answers.add(answer);
     }
 
-    // remove a specified answer from ArrayList
+    public void removeAnswer(String answer) {
+        answers.remove(answer);
+    }
 
 }

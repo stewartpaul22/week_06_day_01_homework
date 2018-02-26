@@ -40,4 +40,10 @@ public class EightBallTest {
         assertEquals(4, eightBall.getAnswerCount());
     }
 
+    @Test
+    public void canRemoveAnswer() {
+        eightBall.removeAnswer("Ask again later.");
+        assertEquals(2, eightBall.getAnswerCount());
+    }
+
 }
