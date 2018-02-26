@@ -26,8 +26,9 @@ public class EightBall {
         return answers.get(0);
     }
 
-
-    // add an answer to ArrayList
+    public void add(String answer) {
+        answers.add(answer);
+    }
 
     // remove a specified answer from ArrayList
 

@@ -33,4 +33,11 @@ public class EightBallTest {
         assertTrue(results.contains(randomAnswer));
         //System.out.println(randomAnswer);
     }
+
+    @Test
+    public void canAddAnswer() {
+        eightBall.add("Yes");
+        assertEquals(4, eightBall.getAnswerCount());
+    }
+
 }
