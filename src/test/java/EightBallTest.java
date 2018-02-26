@@ -1,6 +1,9 @@
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static junit.framework.TestCase.assertEquals;
 
 public class EightBallTest {
 
@@ -13,5 +16,10 @@ public class EightBallTest {
         answers.add("It's difficult to predict.");
         answers.add("Ask again later.");
         eightBall = new EightBall(answers);
+    }
+
+    @Test
+    public void hasAnswers() {
+    assertEquals(3, eightBall.getAnswerCount());
     }
 }

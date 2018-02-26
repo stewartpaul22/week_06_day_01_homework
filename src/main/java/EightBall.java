@@ -4,11 +4,20 @@ public class EightBall {
 
     private ArrayList<String> answers;
 
-    // private instance variables
-
-    // constructor
     public EightBall(ArrayList<String> answers) {
         this.answers = answers;
+    }
+
+    public ArrayList<String> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(ArrayList<String> answers) {
+        this.answers = answers;
+    }
+
+    public int getAnswerCount() {
+        return answers.size();
     }
 
     // return random answer
