@@ -10,24 +10,24 @@ public class EightBall {
     }
 
     public ArrayList<String> getAnswers() {
-        return new ArrayList<>(answers);
+        return new ArrayList<>(this.answers);
     }
 
     public int getAnswerCount() {
-        return answers.size();
+        return this.answers.size();
     }
 
     public String getRandomAnswer() {
-        Collections.shuffle(answers);
-        return answers.get(0);
+        Collections.shuffle(this.answers);
+        return this.answers.get(0);
     }
 
     public void add(String answer) {
-        answers.add(answer);
+        this.answers.add(answer);
     }
 
     public void removeAnswer(String answer) {
-        answers.remove(answer);
+        this.answers.remove(answer);
     }
 
 }
